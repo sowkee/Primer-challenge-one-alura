@@ -1,0 +1,40 @@
+.header {
+    grid-area: header;
+    padding: 0 0 0 80px ; 
+    align-items: center;
+
+}
+
+.header__nav___titulo {
+    font-size: 30px;
+    color: #0A3871;
+    font-weight: 600;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+    .header {
+        padding: 0 0 0 1rem;
+    }
+    .header__nav___titulo {
+        font-size: 35px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+    .header {
+        padding: 0 0 0 2rem;
+    }
+    .header__nav___titulo {
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+

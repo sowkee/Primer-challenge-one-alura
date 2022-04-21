@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar!</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/contenido.css">
+    <link rel="stylesheet" href="assets/css/contenido-caja-uno.css">
+    <link rel="stylesheet" href="assets/css/contenido-caja-dos.css">
+    <link rel="stylesheet" href="assets/css/contenido-caja-tres.css">
+
+    <!-- Script -->
+    <script type="text/javascript" src="app.js"></script>
+
+</head>
+<body class="app">   
+
+    <header class="header">
+        <nav class="header__nav">
+            <h1 class="header__nav___titulo">en!</h1>
+        </nav>
+    </header>
+
+   <main class="contenido">
+        
+        <section class="contenido__seccion">
+            <div class="contenido__caja___uno box">
+
+                <form class="contenido__caja___uno-form">
+                    
+                    <textarea class="contenido__caja___uno-input" type="text" id="inputtexto" placeholder="Ingrese el texto aquí..." autofocus maxlength="1500" cols="40" rows="14"></textarea>
+                </form>                          
+            </div>
+
+            <div class="contenido__caja___dos caja">
+            
+                <img class="contenido__caja___dos-img" id="img" src="assets/img/Muñeco.png" alt="Muñeco">
+                
+                <h2 class="contenido__caja___dos-titulo" id="texto">Ningún mensaje fue encontrado.</h2>
+
+                <textarea class="contenido__caja___dos-parrafo" id="texto2" maxlength="1500" cols="25" rows="5">Ingresa el texto que deseas encriptar o desencriptar.</textarea>
+                
+                <button class="contenido__caja___dos-copiar" id="copiar" onclick="copiar()">
+                    Copiar
+                </button>
+                
+                
+
+            </div>
+            <div class="contenido__caja___tres box">
+                <h4 class="contenido__caja___tres-titulo">Solo letras minúsculas, sin acento</h4>
+                <div class="contenido__caja___tres-botones">
+                    <button class="contenido__caja___tres-boton-uno" id="btn1" onclick="encriptar()">
+                        Encriptar
+                    </button>
+                    <button class="contenido__caja___tres-boton-dos" id="btn2" onclick="desencriptar()">
+                        Desencriptar
+                    </button>
+                </div>
+                
+                
+            </div>
+        </section>
+
+       
+    </main>
+
+
+    <!--Script-->
+    
+</body>
+</html>
